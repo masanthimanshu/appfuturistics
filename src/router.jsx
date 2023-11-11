@@ -2,8 +2,7 @@ import { CssBaseline } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
 
 // Pages Imported Here
-import { Home } from "./pages/home/Home";
-import { Services } from "./pages/services/Services";
+import { Home, Services } from "./pages/pages";
 
 export const Router = () => {
   return (

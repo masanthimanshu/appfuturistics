@@ -1,12 +1,12 @@
 import { ArrowOutward } from "@mui/icons-material";
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
     <header>
       <Grid container>
-        <Grid item md={6}>
+        <Grid item md={7}>
           <Link to="/">
             <Typography fontSize={22}>
               <b>
@@ -15,8 +15,8 @@ export const Header = () => {
             </Typography>
           </Link>
         </Grid>
-        <Grid item md={6}>
-          <Box display="flex" alignItems="center" justifyContent="space-around">
+        <Grid item md={5}>
+          <menu>
             <Link to="/services">Services</Link>
             <Link to="/portfolio">Portfolio</Link>
             <Link to="/about">About</Link>
@@ -27,7 +27,7 @@ export const Header = () => {
                 <b>Contact Us</b> &nbsp;&nbsp; <ArrowOutward />
               </Button>
             </Link>
-          </Box>
+          </menu>
         </Grid>
       </Grid>
     </header>

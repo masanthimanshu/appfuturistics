@@ -17,7 +17,8 @@ a {
   text-decoration: none;
 }
 
-video {
+video,
+img {
   width: 100%;
   object-fit: cover;
 }

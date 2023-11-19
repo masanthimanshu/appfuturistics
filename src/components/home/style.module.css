@@ -1,3 +1,14 @@
+.hero_sec {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero_sec .slider,
+.hero_sec img {
+  width: 50vw;
+  object-fit: cover;
+}
+
 .services_box {
   padding: 1rem;
   color: white;

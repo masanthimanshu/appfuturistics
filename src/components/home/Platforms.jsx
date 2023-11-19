@@ -1,4 +1,3 @@
-import { Grid } from "@mui/material";
 import style from "./style.module.css";
 
 export const Platforms = () => {
@@ -14,7 +13,7 @@ export const Platforms = () => {
       <i className="fa-brands fa-app-store-ios"></i>
       <i className="fa-brands fa-docker"></i>
       <i className="fa-brands fa-laravel"></i>
-      <i class="fa-brands fa-github"></i>
+      <i className="fa-brands fa-github"></i>
     </div>
   );
 };

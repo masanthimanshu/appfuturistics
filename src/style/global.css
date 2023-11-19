@@ -23,13 +23,6 @@ a {
   text-decoration: none;
 }
 
-video,
-img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 hr {
   border: 0;
   width: 150px;

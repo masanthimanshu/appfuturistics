@@ -17,9 +17,9 @@ export const Home = () => {
         <Grid container>
           <Grid item md={8}>
             <Typography variant="h4">
-              We specialize in creating unique experiences and developing
-              products that leverage cutting-edge mobile apps and AI solutions
-              to enhance your digital influence.
+              We specialize in crafting unique experiences that leverage
+              cutting-edge mobile apps and AI solutions to enhance your digital
+              influence.
             </Typography>
           </Grid>
         </Grid>

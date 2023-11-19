@@ -42,3 +42,11 @@
   text-align: center;
   grid-template-columns: repeat(6, 1fr);
 }
+
+@media only screen and (max-width: 450px) {
+  .platform {
+    gap: 3.5rem;
+    font-size: 3.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

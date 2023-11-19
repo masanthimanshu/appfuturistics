@@ -17,9 +17,9 @@ export const Home = () => {
         <Grid container>
           <Grid item md={8}>
             <Typography variant="h4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              earum blanditiis obcaecati excepturi quidem nobis suscipit
-              voluptas in reiciendis quis!
+              We specialize in creating unique experiences and developing
+              products that leverage cutting-edge mobile apps and AI solutions
+              to enhance your digital influence.
             </Typography>
           </Grid>
         </Grid>
@@ -45,7 +45,15 @@ export const Home = () => {
         </Grid>
       </Container>
       <hr />
-      <Box p={10} color="white" bgcolor="var(--webColor)">
+      <Container
+        maxWidth="xl"
+        sx={{
+          pt: 10,
+          pb: 10,
+          color: "white",
+          bgcolor: "var(--webColor)",
+        }}
+      >
         <Typography>
           <b>OUR PLATFORM EXPERTISE</b>
         </Typography>
@@ -59,7 +67,7 @@ export const Home = () => {
           </Grid>
         </Grid>
         <Platforms />
-      </Box>
+      </Container>
     </>
   );
 };

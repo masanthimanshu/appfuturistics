@@ -1,5 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { HeroSlider } from "../../components/home/HeroSlider";
+import { Platforms } from "../../components/home/Platforms";
 import { ServiceCard } from "../../components/home/ServiceCard";
 import { ServicesData } from "../../data/services-data";
 
@@ -57,11 +58,7 @@ export const Home = () => {
             </Typography>
           </Grid>
         </Grid>
-        <br />
-        <br />
-        <Grid container spacing={5}>
-          <Grid item md={3}></Grid>
-        </Grid>
+        <Platforms />
       </Box>
     </>
   );

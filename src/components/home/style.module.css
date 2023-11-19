@@ -22,3 +22,12 @@
 .services_box:hover h4 {
   color: var(--webColor);
 }
+
+.platform {
+  gap: 7.5rem;
+  display: grid;
+  font-size: 4rem;
+  padding-top: 6rem;
+  text-align: center;
+  grid-template-columns: repeat(5, 1fr);
+}

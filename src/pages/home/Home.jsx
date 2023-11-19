@@ -1,18 +1,18 @@
-import { Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { HeroSlider } from "../../components/home/HeroSlider";
+import { ServiceCard } from "../../components/home/ServiceCard";
 import { ServicesData } from "../../data/services-data";
-import style from "./style.module.css";
-import { Ruler } from "../../components/Ruler";
 
 export const Home = () => {
   return (
     <>
       <HeroSlider />
-      <Ruler />
+      <hr />
       <Container maxWidth="xl">
         <Typography color={"lightsalmon"}>
           <b>What we do</b>
         </Typography>
+        <br />
         <Grid container>
           <Grid item md={8}>
             <Typography variant="h4">
@@ -32,30 +32,37 @@ export const Home = () => {
           {ServicesData.map((e, index) => {
             return (
               <Grid key={index} item md={4}>
-                <div className={style.services_box}>
-                  <img
-                    style={{ width: "75px" }}
-                    src="/CodingService.png"
-                    alt="Coding Service"
-                  />
-                  <br />
-                  <br />
-                  <Typography variant="h4">Coding Service</Typography>
-                  <br />
-                  <br />
-                  <Typography>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Atque consectetur vel tenetur quisquam, dignissimos soluta
-                    dolores veniam, excepturi eum, amet sequi quaerat laborum
-                    harum deleniti culpa suscipit nulla nemo ipsa!
-                  </Typography>
-                </div>
+                <ServiceCard
+                  name={e.name}
+                  desc={e.desc}
+                  link={e.link}
+                  image={e.image}
+                />
               </Grid>
             );
           })}
         </Grid>
       </Container>
-      <Ruler />
+      <hr />
+      <Box p={10} color="white" bgcolor="var(--webColor)">
+        <Typography>
+          <b>OUR PLATFORM EXPERTISE</b>
+        </Typography>
+        <br />
+        <Grid container>
+          <Grid item md={8}>
+            <Typography variant="h4">
+              Leverage our profound platform knowledge and robust technological
+              capabilities.
+            </Typography>
+          </Grid>
+        </Grid>
+        <br />
+        <br />
+        <Grid container spacing={5}>
+          <Grid item md={3}></Grid>
+        </Grid>
+      </Box>
     </>
   );
 };

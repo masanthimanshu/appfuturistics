@@ -31,7 +31,10 @@ img {
 
 hr {
   border: 0;
-  border-bottom: 1px solid var(--webColor);
+  width: 150px;
+  opacity: 0.5;
+  margin: 5rem auto;
+  border-bottom: 7.5px dotted var(--webColor);
 }
 
 header {

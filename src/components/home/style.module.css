@@ -8,7 +8,9 @@
 }
 
 .services_box h4 {
+  color: white;
   font-weight: bold;
+  transition-duration: 0.5s;
   font-family: var(--headingFont);
 }
 

@@ -8,18 +8,18 @@ export const HeroSlider = () => {
       <Grid item md={6}>
         <Swiper autoplay modules={[Autoplay]}>
           <SwiperSlide>
-            <img src="/CodingAgency.png" alt="Coding Agency" />
+            <img src="/images/CodingAgency.png" alt="Coding Agency" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/DesignAgency.png" alt="Design Agency" />
+            <img src="/images/DesignAgency.png" alt="Design Agency" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/MarketingAgency.png" alt="Marketing Agency" />
+            <img src="/images/MarketingAgency.png" alt="Marketing Agency" />
           </SwiperSlide>
         </Swiper>
       </Grid>
       <Grid item md={6}>
-        <img src="/Vector.png" alt="AppFuturistics Background" />
+        <img src="/images/Vector.png" alt="AppFuturistics Background" />
       </Grid>
     </Grid>
   );

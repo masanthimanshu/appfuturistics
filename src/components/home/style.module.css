@@ -49,4 +49,17 @@
     font-size: 3.5rem;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .hero_sec {
+    display: block;
+  }
+
+  .hero_sec .slider,
+  .hero_sec img {
+    width: 100vw;
+  }
+
+  .hero_sec .vector_img {
+    display: none;
+  }
 }

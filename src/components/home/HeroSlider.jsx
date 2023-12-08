@@ -18,7 +18,11 @@ export const HeroSlider = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <img src="/images/Vector.png" alt="AppFuturistics Background" />
+      <img
+        src="/images/Vector.png"
+        className={style.vector_img}
+        alt="AppFuturistics Background"
+      />
     </div>
   );
 };

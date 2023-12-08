@@ -8,7 +8,10 @@ export const Home = () => {
   return (
     <>
       <HeroSlider />
-      <hr />
+      <br />
+      <br />
+      <br />
+      <br />
       <Container maxWidth="xl">
         <Typography color={"lightsalmon"}>
           <b>What we do</b>

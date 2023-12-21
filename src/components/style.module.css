@@ -1,0 +1,16 @@
+.menu_sec {
+  top: 85vh;
+  width: 60vw;
+  margin: auto;
+  padding: 1rem 0;
+  position: sticky;
+  border-radius: 100px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.selected_item {
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 100px;
+  background-color: black;
+}

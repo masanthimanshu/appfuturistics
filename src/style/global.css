@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&family=Parisienne);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+@import url(./scrollbar.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+a {
+  display: flex;
+  color: inherit;
+  align-items: center;
+  text-decoration: none;
+}

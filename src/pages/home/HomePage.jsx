@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import style from "./style.module.css";
-import { Container } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import { useLayoutEffect, useRef } from "react";
 import { HomeMenu } from "../../components/HomeMenu";
 
@@ -32,16 +32,21 @@ export const HomePage = () => {
   }, []);
 
   return (
-    <>
-      <section className={style.main_sec} ref={animation}>
-        <img src="/mascot.png" alt="Mascot" id="mascot" />
-        <div>
+    <div ref={animation}>
+      <Box position="relative" height="110vh" textAlign="center">
+        <img
+          id="mascot"
+          alt="Mascot"
+          src="/mascot.png"
+          className={style.hero_img}
+        />
+        <div className={style.hero_div}>
           <h1 id="org_name">Appfuturistics</h1>
           <h2 id="subtitle">YOUR TECHNOLOGY PARTNER</h2>
         </div>
-      </section>
+      </Box>
       <HomeMenu />
       <Container sx={{ height: "500vh" }}></Container>
-    </>
+    </div>
   );
 };

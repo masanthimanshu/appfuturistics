@@ -1,34 +1,40 @@
-import style from "./style.module.css";
 import { Link } from "react-router-dom";
-import { Box, Typography } from "@mui/material";
+import { Box, Container } from "@mui/material";
 
 export const HomeMenu = () => {
   return (
-    <section className={style.menu_sec}>
+    <Container
+      sx={{
+        p: 1.25,
+        top: "90vh",
+        boxShadow: 5,
+        borderRadius: 25,
+        position: "sticky",
+      }}
+    >
       <Box display="flex" justifyContent="space-around">
-        <div className={style.selected_item}>
-          <Link to="/">
-            <i className="fa-solid fa-house-user"></i> &nbsp;&nbsp;
-            <Typography>Home</Typography>
-          </Link>
-        </div>
         <Link to="/">
-          <i className="fa-solid fa-microchip"></i> &nbsp;&nbsp;
-          <Typography>Services</Typography>
+          <Box py={1} px={4} color="white" bgcolor="black" borderRadius={25}>
+            <i className="fa-solid fa-house-user"></i> &nbsp;&nbsp; Home
+          </Box>
         </Link>
         <Link to="/">
-          <i className="fa-solid fa-briefcase"></i> &nbsp;&nbsp;
-          <Typography>Portfolio</Typography>
+          <i className="fa-solid fa-microchip"></i> &nbsp;&nbsp; Services
         </Link>
         <Link to="/">
-          <i className="fa-solid fa-circle-user"></i> &nbsp;&nbsp;
-          <Typography>About</Typography>
+          <i className="fa-solid fa-briefcase"></i> &nbsp;&nbsp; Portfolio
+        </Link>
+        <Link to="/">
+          <i className="fa-solid fa-circle-user"></i> &nbsp;&nbsp; About
         </Link>
         <Link to="/">
           <i className="fa-solid fa-square-arrow-up-right"></i> &nbsp;&nbsp;
-          <Typography>Hire us</Typography>
+          Hire us
+        </Link>
+        <Link to="/">
+          <i className="fa-solid fa-paper-plane"></i> &nbsp;&nbsp; Career
         </Link>
       </Box>
-    </section>
+    </Container>
   );
 };

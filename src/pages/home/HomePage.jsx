@@ -2,7 +2,10 @@ import { gsap } from "gsap";
 import style from "./style.module.css";
 import { Box, Container } from "@mui/material";
 import { useLayoutEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { HomeMenu } from "../../components/HomeMenu";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const HomePage = () => {
   const animation = useRef();

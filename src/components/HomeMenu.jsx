@@ -9,6 +9,7 @@ export const HomeMenu = () => {
         top: "90vh",
         boxShadow: 5,
         borderRadius: 25,
+        bgcolor: "white",
         position: "sticky",
       }}
     >

@@ -3,7 +3,7 @@ import style from "./style.module.css";
 import { Box, Container } from "@mui/material";
 import { useLayoutEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { HomeMenu } from "../../components/HomeMenu";
+import { BottomNavbar } from "../../components/BottomNavbar";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,6 +12,11 @@ export const HomePage = () => {
   const timeLine = gsap.timeline();
 
   useLayoutEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
     const ctx = gsap.context(() => {
       timeLine.to("#org_name", {
         y: -50,
@@ -26,7 +31,7 @@ export const HomePage = () => {
 
       timeLine.to("#mascot", {
         y: -50,
-        delay: 0.5,
+        delay: 0.25,
         opacity: 0.05,
       });
     }, animation);
@@ -48,7 +53,7 @@ export const HomePage = () => {
           <h2 id="subtitle">YOUR TECHNOLOGY PARTNER</h2>
         </div>
       </Box>
-      <HomeMenu />
+      <BottomNavbar page="home" />
       <Container sx={{ height: "500vh" }}></Container>
     </div>
   );

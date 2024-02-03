@@ -2,12 +2,12 @@ import { Box, Container, Typography } from "@mui/material";
 import { BottomNavbar } from "../../components/navigation/BottomNavbar";
 import { HomeHeroSection } from "../../components/home/HomeHeroSection";
 
-export const HomePage = () => {
+export default function HomePage() {
   return (
     <>
       <HomeHeroSection />
       <BottomNavbar page="home" />
-      <Box bgcolor="#f5f5f5" py={10}>
+      <Box bgcolor="#fafafa" py={10}>
         <Container sx={{ textAlign: "center" }}>
           <Typography variant="h3">
             <b>How can we help you?</b>
@@ -24,4 +24,4 @@ export const HomePage = () => {
       <Container sx={{ height: "200vh" }}></Container>
     </>
   );
-};
+}

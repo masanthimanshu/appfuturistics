@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Container } from "@mui/material";
 import { BottomNavbar } from "../../components/navigation/BottomNavbar";
 
-export const ServicesPage = () => {
+export default function ServicesPage() {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -17,4 +17,4 @@ export const ServicesPage = () => {
       <Container sx={{ height: "500vh" }}></Container>
     </>
   );
-};
+}

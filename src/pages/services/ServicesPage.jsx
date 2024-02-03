@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Container } from "@mui/material";
-import { BottomNavbar } from "../../components/BottomNavbar";
+import { BottomNavbar } from "../../components/navigation/BottomNavbar";
 
 export const ServicesPage = () => {
   useEffect(() => {

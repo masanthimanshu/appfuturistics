@@ -1,60 +1,27 @@
-import { gsap } from "gsap";
-import style from "./style.module.css";
-import { Box, Container } from "@mui/material";
-import { useLayoutEffect, useRef } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { BottomNavbar } from "../../components/BottomNavbar";
-
-gsap.registerPlugin(ScrollTrigger);
+import { Box, Container, Typography } from "@mui/material";
+import { BottomNavbar } from "../../components/navigation/BottomNavbar";
+import { HomeHeroSection } from "../../components/home/HomeHeroSection";
 
 export const HomePage = () => {
-  const animation = useRef();
-  const timeLine = gsap.timeline();
-
-  useLayoutEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-
-    const ctx = gsap.context(() => {
-      timeLine.to("#org_name", {
-        y: -50,
-        opacity: 1,
-        delay: 0.25,
-      });
-
-      timeLine.to("#subtitle", {
-        y: -50,
-        opacity: 1,
-      });
-
-      timeLine.to("#mascot", {
-        y: -50,
-        delay: 0.25,
-        opacity: 0.05,
-      });
-    }, animation);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <div ref={animation}>
-      <Box position="relative" height="110vh" textAlign="center">
-        <img
-          id="mascot"
-          alt="Mascot"
-          src="/mascot.png"
-          className={style.hero_img}
-        />
-        <div className={style.hero_div}>
-          <h1 id="org_name">Appfuturistics</h1>
-          <h2 id="subtitle">YOUR TECHNOLOGY PARTNER</h2>
-        </div>
-      </Box>
+    <>
+      <HomeHeroSection />
       <BottomNavbar page="home" />
-      <Container sx={{ height: "500vh" }}></Container>
-    </div>
+      <Box bgcolor="#f5f5f5" py={10}>
+        <Container sx={{ textAlign: "center" }}>
+          <Typography variant="h3">
+            <b>How can we help you?</b>
+          </Typography>
+          <br />
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ipsum
+            quas laborum nostrum natus consequatur cum asperiores odio minus
+            placeat quos atque sint minima qui pariatur soluta iste veritatis
+            blanditiis?
+          </Typography>
+        </Container>
+      </Box>
+      <Container sx={{ height: "200vh" }}></Container>
+    </>
   );
 };

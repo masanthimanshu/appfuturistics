@@ -7,6 +7,7 @@ export const OurServicesCard = ({ icon, heading, description }) => {
       <div className={style.services_card}>
         <Typography variant="h3">{icon}</Typography>
         <br />
+        <br />
         <Typography variant="h4">
           <b>{heading}</b>
         </Typography>

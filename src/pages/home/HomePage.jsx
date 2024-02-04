@@ -1,15 +1,10 @@
+import { Box, Grid, Container, Typography } from "@mui/material";
 import { ContactForm } from "../../components/contact/ContactForm";
 import { PlatformIcons } from "../../components/home/PlatformIcons";
 import { BottomNavbar } from "../../components/navigation/BottomNavbar";
 import { HomeHeroSection } from "../../components/home/HomeHeroSection";
 import { OurServicesCard } from "../../components/home/OurServicesCard";
-import { Box, Grid, Button, Container, Typography } from "@mui/material";
-import {
-  Code,
-  AppShortcut,
-  ArrowOutward,
-  DesignServices,
-} from "@mui/icons-material";
+import { CaseStudiesCard } from "../../components/home/CaseStudiesCard";
 
 export default function HomePage() {
   return (
@@ -34,27 +29,21 @@ export default function HomePage() {
           <Grid container spacing={5}>
             <OurServicesCard
               heading="Design"
-              icon={<DesignServices fontSize="inherit" />}
-              description="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Obcaecati, quae doloremque! Aperiam sint sapiente excepturi
-                  quo, et vero fugit expedita ea adipisci molestias eligendi.
-                  Praesentium, molestias? Ab culpa facere modi."
+              icon={<i class="fa-solid fa-crop"></i>}
+              description="Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Quis dignissimos enim unde!"
             />
             <OurServicesCard
               heading="Development"
-              icon={<Code fontSize="inherit" />}
-              description="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Obcaecati, quae doloremque! Aperiam sint sapiente excepturi
-                  quo, et vero fugit expedita ea adipisci molestias eligendi.
-                  Praesentium, molestias? Ab culpa facere modi."
+              icon={<i class="fa-solid fa-code"></i>}
+              description="Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Quis dignissimos enim unde!"
             />
             <OurServicesCard
               heading="Marketing"
-              icon={<AppShortcut fontSize="inherit" />}
-              description="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Obcaecati, quae doloremque! Aperiam sint sapiente excepturi
-                  quo, et vero fugit expedita ea adipisci molestias eligendi.
-                  Praesentium, molestias? Ab culpa facere modi."
+              icon={<i class="fa-solid fa-chart-simple"></i>}
+              description="Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Quis dignissimos enim unde!"
             />
           </Grid>
         </Container>
@@ -77,94 +66,34 @@ export default function HomePage() {
         <br />
         <br />
         <Grid container spacing={5}>
-          <Grid item md={6}>
-            <img src="/desk.png" alt="Case Study" style={{ width: "100%" }} />
-            <br />
-            <br />
-            <Box display="flex" justifyContent="space-between">
-              <Typography>Mobile App Development</Typography>
-              <Typography color="gray">
-                <b>Flutter & Firebase</b>
-              </Typography>
-            </Box>
-            <br />
-            <Typography>
-              <b>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis repudiandae animi, similique fugiat cupiditate iusto?
-              </b>
-            </Typography>
-            <br />
-            <Button variant="text" color="primary">
-              View Case Study &nbsp; <ArrowOutward />
-            </Button>
-          </Grid>
-          <Grid item md={6}>
-            <img src="/desk.png" alt="Case Study" style={{ width: "100%" }} />
-            <br />
-            <br />
-            <Box display="flex" justifyContent="space-between">
-              <Typography>Mobile App Development</Typography>
-              <Typography color="gray">
-                <b>Flutter & Firebase</b>
-              </Typography>
-            </Box>
-            <br />
-            <Typography>
-              <b>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis repudiandae animi, similique fugiat cupiditate iusto?
-              </b>
-            </Typography>
-            <br />
-            <Button variant="text" color="primary">
-              View Case Study &nbsp; <ArrowOutward />
-            </Button>
-          </Grid>
-          <Grid item md={6}>
-            <img src="/desk.png" alt="Case Study" style={{ width: "100%" }} />
-            <br />
-            <br />
-            <Box display="flex" justifyContent="space-between">
-              <Typography>Mobile App Development</Typography>
-              <Typography color="gray">
-                <b>Flutter & Firebase</b>
-              </Typography>
-            </Box>
-            <br />
-            <Typography>
-              <b>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis repudiandae animi, similique fugiat cupiditate iusto?
-              </b>
-            </Typography>
-            <br />
-            <Button variant="text" color="primary">
-              View Case Study &nbsp; <ArrowOutward />
-            </Button>
-          </Grid>
-          <Grid item md={6}>
-            <img src="/desk.png" alt="Case Study" style={{ width: "100%" }} />
-            <br />
-            <br />
-            <Box display="flex" justifyContent="space-between">
-              <Typography>Mobile App Development</Typography>
-              <Typography color="gray">
-                <b>Flutter & Firebase</b>
-              </Typography>
-            </Box>
-            <br />
-            <Typography>
-              <b>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis repudiandae animi, similique fugiat cupiditate iusto?
-              </b>
-            </Typography>
-            <br />
-            <Button variant="text" color="primary">
-              View Case Study &nbsp; <ArrowOutward />
-            </Button>
-          </Grid>
+          <CaseStudiesCard
+            image="/desk.png"
+            tech="Flutter & Firebase"
+            type="Mobile App Development"
+            title="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis repudiandae animi, similique fugiat cupiditate iusto?"
+          />
+          <CaseStudiesCard
+            image="/desk.png"
+            tech="Flutter & Firebase"
+            type="Mobile App Development"
+            title="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Blanditiis repudiandae animi, similique fugiat cupiditate iusto?"
+          />
+          <CaseStudiesCard
+            image="/desk.png"
+            tech="Flutter & Firebase"
+            type="Mobile App Development"
+            title="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Blanditiis repudiandae animi, similique fugiat cupiditate iusto?"
+          />
+          <CaseStudiesCard
+            image="/desk.png"
+            tech="Flutter & Firebase"
+            type="Mobile App Development"
+            title="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis repudiandae animi, similique fugiat cupiditate iusto?"
+          />
         </Grid>
         <br />
         <br />

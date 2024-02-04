@@ -3,6 +3,7 @@ import { DesignServices, Code, AppShortcut } from "@mui/icons-material";
 import { BottomNavbar } from "../../components/navigation/BottomNavbar";
 import { HomeHeroSection } from "../../components/home/HomeHeroSection";
 import { OurServicesCard } from "../../components/home/OurServicesCard";
+import { PlatformsExpertise } from "../../components/home/PlatformsExpertise";
 
 export default function HomePage() {
   return (
@@ -83,6 +84,25 @@ export default function HomePage() {
         <br />
         <br />
       </Container>
+      <br />
+      <br />
+      <br />
+      <br />
+      <Box bgcolor="#fafafa" py={10}>
+        <Container>
+          <Typography variant="h3" textAlign="center">
+            <b>Our Platforms Expertise</b>
+          </Typography>
+          <br />
+          <Typography textAlign="center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ipsum
+            quas laborum nostrum natus consequatur cum asperiores odio minus
+            placeat quos atque sint minima qui pariatur soluta iste veritatis
+            blanditiis?
+          </Typography>
+          <PlatformsExpertise />
+        </Container>
+      </Box>
       <Box height={100}></Box>
     </>
   );

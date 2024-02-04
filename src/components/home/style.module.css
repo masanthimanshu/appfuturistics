@@ -48,3 +48,14 @@
 .services_card:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+/* Platforms Expertise Style */
+
+.platform {
+  gap: 7.5rem;
+  display: grid;
+  font-size: 4rem;
+  padding-top: 6rem;
+  text-align: center;
+  grid-template-columns: repeat(6, 1fr);
+}

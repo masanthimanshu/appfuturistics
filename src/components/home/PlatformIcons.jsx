@@ -1,6 +1,6 @@
 import style from "./style.module.css";
 
-export const PlatformsExpertise = () => {
+export const PlatformIcons = () => {
   return (
     <div className={style.platform}>
       <i className="fa-brands fa-aws"></i>

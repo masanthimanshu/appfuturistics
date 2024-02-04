@@ -20,7 +20,7 @@ export const HomeHeroSection = () => {
       timeLine.to("#org_name", {
         y: -50,
         opacity: 1,
-        delay: 0.25,
+        delay: 0.1,
       });
 
       timeLine.to("#subtitle", {
@@ -30,7 +30,7 @@ export const HomeHeroSection = () => {
 
       timeLine.to("#mascot", {
         y: -50,
-        delay: 0.25,
+        delay: 0.05,
         opacity: 0.05,
       });
     }, animation);
@@ -49,7 +49,7 @@ export const HomeHeroSection = () => {
         />
         <div className={style.hero_div}>
           <h1 id="org_name">Appfuturistics</h1>
-          <h2 id="subtitle">YOUR TECHNOLOGY PARTNER</h2>
+          <h2 id="subtitle">YOUR TECHNOLOGY PARTNERS</h2>
         </div>
       </Box>
     </div>

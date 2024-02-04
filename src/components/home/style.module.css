@@ -1,3 +1,5 @@
+/* Hero Section Style */
+
 .hero_img {
   opacity: 0;
   height: 90%;
@@ -32,4 +34,17 @@
   100% {
     transform: translateY(30px);
   }
+}
+
+/* Our Services Card Style */
+
+.services_card {
+  padding: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: white;
+}
+
+.services_card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

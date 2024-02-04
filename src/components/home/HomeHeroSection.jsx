@@ -31,7 +31,7 @@ export const HomeHeroSection = () => {
       timeLine.to("#mascot", {
         y: -50,
         delay: 0.05,
-        opacity: 0.05,
+        opacity: 0.075,
       });
     }, animation);
 
@@ -40,7 +40,7 @@ export const HomeHeroSection = () => {
 
   return (
     <div ref={animation}>
-      <Box position="relative" height="110vh" textAlign="center">
+      <Box position="relative" height="100vh" textAlign="center">
         <img
           id="mascot"
           alt="Mascot"

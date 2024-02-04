@@ -25,6 +25,10 @@ export default function HomePage() {
   const [phone, setPhone] = useState("");
   const [company, setCompany] = useState("");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <HomeHeroSection />
@@ -204,7 +208,14 @@ export default function HomePage() {
       <br />
       <br />
       <Container>
-        <form>
+        <Typography color="grey">
+          <b>GET IN TOUCH</b>
+        </Typography>
+        <Typography variant="h4">Let’s get started on your project!</Typography>
+        <br />
+        <br />
+        <br />
+        <form onSubmit={handleSubmit}>
           <Grid container spacing={5}>
             <Grid item md={6}>
               <TextField
@@ -267,7 +278,7 @@ export default function HomePage() {
           </Grid>
           <br />
           <br />
-          <Button variant="text" color="primary">
+          <Button variant="text" color="primary" type="submit">
             Submit &nbsp;
             <ArrowOutward />
           </Button>

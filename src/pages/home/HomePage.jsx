@@ -26,7 +26,7 @@ export default function HomePage() {
           <br />
           <br />
           <br />
-          <Grid container spacing={5}>
+          <Grid container spacing={3}>
             <OurServicesCard
               heading="Design"
               icon={<i class="fa-solid fa-crop"></i>}
@@ -51,7 +51,6 @@ export default function HomePage() {
       <br />
       <br />
       <br />
-      <br />
       <Container>
         <Typography variant="h3" textAlign="center">
           <b>Case Studies</b>
@@ -65,7 +64,8 @@ export default function HomePage() {
         </Typography>
         <br />
         <br />
-        <Grid container spacing={5}>
+        <br />
+        <Grid container spacing={6}>
           <CaseStudiesCard
             image="/desk.png"
             tech="Flutter & Firebase"
@@ -116,7 +116,7 @@ export default function HomePage() {
         </Container>
       </Box>
       <ContactForm />
-      <Box height={100}></Box>
+      <Box height={50}></Box>
     </>
   );
 }

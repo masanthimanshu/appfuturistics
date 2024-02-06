@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const HomeHeroSection = () => {
-  const animation = useRef();
+  const animation = useRef(null);
   const timeLine = gsap.timeline();
 
   useLayoutEffect(() => {

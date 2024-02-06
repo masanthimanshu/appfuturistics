@@ -1,0 +1,10 @@
+.zoom_sec {
+  width: 0;
+  margin: auto;
+  height: 50vh;
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(/public/desk.png);
+}

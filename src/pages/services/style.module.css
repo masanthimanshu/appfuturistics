@@ -1,0 +1,16 @@
+.hero_div {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.hero_div h1 {
+  font-size: 8rem;
+  font-family: "Parisienne";
+}
+
+.hero_div h2 {
+  font-size: 2rem;
+}

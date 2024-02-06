@@ -1,8 +1,8 @@
 import { Box, Grid, Container, Typography } from "@mui/material";
 import { ContactForm } from "../../components/contact/ContactForm";
 import { PlatformIcons } from "../../components/home/PlatformIcons";
+import { HomeHeroSection } from "../../components/home/HomeHeroSec";
 import { BottomNavbar } from "../../components/navigation/BottomNavbar";
-import { HomeHeroSection } from "../../components/home/HomeHeroSection";
 import { OurServicesCard } from "../../components/home/OurServicesCard";
 import { CaseStudiesCard } from "../../components/home/CaseStudiesCard";
 

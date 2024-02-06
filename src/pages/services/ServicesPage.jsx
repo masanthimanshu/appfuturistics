@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import { Box, Container } from "@mui/material";
+import style from "./style.module.css";
+import { Box, Container, Typography } from "@mui/material";
 import { BottomNavbar } from "../../components/navigation/BottomNavbar";
 
 export default function ServicesPage() {
@@ -12,7 +13,13 @@ export default function ServicesPage() {
 
   return (
     <>
-      <Container sx={{ height: "100vh" }}></Container>
+      <Container sx={{ height: "100vh" }}>
+        <div id="zoom_sec" className={style.hero_sec}>
+          <Typography variant="h2">
+            <b>Services</b>
+          </Typography>
+        </div>
+      </Container>
       <BottomNavbar page="services" />
       <Box height={100}></Box>
     </>

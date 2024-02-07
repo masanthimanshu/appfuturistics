@@ -19,9 +19,9 @@ export const ZoomSection = () => {
     });
 
     tl.to("#zoom_sec", {
-      borderRadius: 0,
-      height: "100vh",
       width: "100vw",
+      height: "100vh",
+      borderRadius: 0,
     });
 
     return () => tl.kill();

@@ -17,12 +17,13 @@ export default function ServicesPage() {
       <Box position="relative" height="80vh" textAlign="center">
         <div className={style.hero_div}>
           <h1 id="org_name">Services</h1>
-          <h2 id="subtitle">Incubating a culture of innovation & creativity</h2>
+          <h2 id="subtitle">Code rules everything around us</h2>
         </div>
       </Box>
       <ZoomSection />
       <br />
       <br />
+      <BottomNavbar page="services" />
       <br />
       <br />
       <Container>
@@ -82,8 +83,7 @@ export default function ServicesPage() {
           </Grid>
         </Box>
       </Container>
-      <BottomNavbar page="services" />
-      <Box height={50}></Box>
+      <Box height={125}></Box>
     </>
   );
 }

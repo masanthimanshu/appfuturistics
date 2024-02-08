@@ -44,7 +44,19 @@ export const BottomNavbar = ({ page }) => {
           )}
         </Link>
         <Link to="/portfolio">
-          <i className="fa-solid fa-briefcase"></i> &nbsp;&nbsp; Portfolio
+          {page == "portfolio" ? (
+            <Box py={1} px={4} color="white" bgcolor="black" borderRadius={25}>
+              <p>
+                <i className="fa-solid fa-briefcase"></i> &nbsp;&nbsp; Portfolio
+              </p>
+            </Box>
+          ) : (
+            <Box py={1} px={4}>
+              <p>
+                <i className="fa-solid fa-briefcase"></i> &nbsp;&nbsp; Portfolio
+              </p>
+            </Box>
+          )}
         </Link>
         <Link to="/about">
           <i className="fa-solid fa-circle-user"></i> &nbsp;&nbsp; About

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { Box, Container, Grid, Typography } from "@mui/material";
 import style from "./style.module.css";
-import { ZoomSection } from "../../components/services/ZoomSection";
+import { Box, Container, Grid, Typography } from "@mui/material";
+import { ZoomSection } from "../../components/common/ZoomSection";
 import { BottomNavbar } from "../../components/navigation/BottomNavbar";
 
 export default function ServicesPage() {
@@ -20,7 +20,7 @@ export default function ServicesPage() {
           <h2 id="subtitle">Code rules everything around us</h2>
         </div>
       </Box>
-      <ZoomSection />
+      <ZoomSection image="/public/desk.png" />
       <br />
       <br />
       <BottomNavbar page="services" />

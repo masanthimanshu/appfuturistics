@@ -41,7 +41,7 @@
 .services_card {
   padding: 2rem;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.25s;
   background-color: white;
 }
 

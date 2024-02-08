@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const ZoomSection = () => {
+export const ZoomSection = ({ image }) => {
   const animation = useRef(null);
 
   useLayoutEffect(() => {
@@ -27,5 +27,12 @@ export const ZoomSection = () => {
     return () => tl.kill();
   }, []);
 
-  return <div ref={animation} id="zoom_sec" className={style.zoom_sec}></div>;
+  return (
+    <div
+      ref={animation}
+      id="zoom_sec"
+      className={style.zoom_sec}
+      style={{ backgroundImage: `url(${image})` }}
+    ></div>
+  );
 };

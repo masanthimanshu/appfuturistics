@@ -14,12 +14,12 @@ export default function ServicesPage() {
 
   return (
     <>
-      <Box position="relative" height="80vh" textAlign="center">
-        <div className={style.hero_div}>
+      <section className={style.hero_sec}>
+        <div>
           <h1 id="org_name">Services</h1>
           <h2 id="subtitle">Code rules everything around us</h2>
         </div>
-      </Box>
+      </section>
       <ZoomSection image="/desk.png" />
       <br />
       <br />

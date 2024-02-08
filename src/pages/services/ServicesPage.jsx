@@ -20,7 +20,7 @@ export default function ServicesPage() {
           <h2 id="subtitle">Code rules everything around us</h2>
         </div>
       </Box>
-      <ZoomSection image="/public/desk.png" />
+      <ZoomSection image="/desk.png" />
       <br />
       <br />
       <BottomNavbar page="services" />

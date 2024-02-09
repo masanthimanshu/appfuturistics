@@ -3,6 +3,7 @@ import style from "./style.module.css";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { ZoomSection } from "../../components/common/ZoomSection";
 import { BottomNavbar } from "../../components/navigation/BottomNavbar";
+import { OurServicesCard } from "../../components/home/OurServicesCard";
 
 export default function ServicesPage() {
   useEffect(() => {
@@ -21,11 +22,30 @@ export default function ServicesPage() {
         </div>
       </section>
       <ZoomSection image="/desk.png" />
-      <br />
+      <Container sx={{ marginTop: "-10rem" }}>
+        <Grid container spacing={5}>
+          <OurServicesCard
+            heading="Design"
+            icon={<i class="fa-solid fa-crop"></i>}
+            description="Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Quis dignissimos enim unde!"
+          />
+          <OurServicesCard
+            heading="Development"
+            icon={<i class="fa-solid fa-code"></i>}
+            description="Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Quis dignissimos enim unde!"
+          />
+          <OurServicesCard
+            heading="Marketing"
+            icon={<i class="fa-solid fa-chart-simple"></i>}
+            description="Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Quis dignissimos enim unde!"
+          />
+        </Grid>
+      </Container>
       <br />
       <BottomNavbar page="services" />
-      <br />
-      <br />
       <Container>
         <Box border={2} borderRadius={2} p={4} borderColor="gray">
           <Grid container spacing={5}>

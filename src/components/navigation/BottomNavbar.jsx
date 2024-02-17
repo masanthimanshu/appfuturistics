@@ -5,13 +5,13 @@ export const BottomNavbar = ({ page }) => {
   return (
     <Container
       sx={{
-        p: 1.25,
+        p: 1.5,
         zIndex: 2,
         boxShadow: 5,
         borderRadius: 25,
         bgcolor: "white",
         position: "sticky",
-        top: "calc(100vh - 75px)",
+        top: "calc(100vh - 80px)",
       }}
     >
       <Box display="flex" justifyContent="space-around">
@@ -59,7 +59,19 @@ export const BottomNavbar = ({ page }) => {
           )}
         </Link>
         <Link to="/about">
-          <i className="fa-solid fa-circle-user"></i> &nbsp;&nbsp; About
+          {page == "about" ? (
+            <Box py={1} px={4} color="white" bgcolor="black" borderRadius={25}>
+              <p>
+                <i className="fa-solid fa-circle-user"></i> &nbsp;&nbsp; About
+              </p>
+            </Box>
+          ) : (
+            <Box py={1} px={4}>
+              <p>
+                <i className="fa-solid fa-circle-user"></i> &nbsp;&nbsp; About
+              </p>
+            </Box>
+          )}
         </Link>
         <Link to="/hire-us">
           <i className="fa-solid fa-square-arrow-up-right"></i> &nbsp;&nbsp;

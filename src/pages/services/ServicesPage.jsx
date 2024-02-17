@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import style from "./style.module.css";
-import { Box, Container, Grid, Typography } from "@mui/material";
-import { ZoomSection } from "../../components/common/ZoomSection";
+import { Box, Container, Divider, Grid, Typography } from "@mui/material";
+import { ContactForm } from "../../components/contact/ContactForm";
+import { ZoomSection } from "../../components/services/ZoomSection";
 import { BottomNavbar } from "../../components/navigation/BottomNavbar";
 import { OurServicesCard } from "../../components/home/OurServicesCard";
 
@@ -103,7 +104,13 @@ export default function ServicesPage() {
           </Grid>
         </Box>
       </Container>
-      <Box height={125}></Box>
+      <br />
+      <br />
+      <br />
+      <br />
+      <Divider />
+      <ContactForm />
+      <Box height={50}></Box>
     </>
   );
 }

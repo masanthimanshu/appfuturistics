@@ -1,18 +1,42 @@
 /* Hero Section Style */
 
-.hero_div {
-  top: 50%;
-  left: 50%;
-  position: absolute;
+.hero_sec {
+  height: 100vh;
+  display: flex;
   text-align: center;
-  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
 }
 
-.hero_div h1 {
+.hero_sec h1 {
   font-size: 8rem;
   font-family: "Parisienne";
 }
 
-.hero_div h2 {
+.hero_sec h2 {
   font-size: 2rem;
+}
+
+/* Details Section Style */
+
+.slide_left {
+  overflow: hidden;
+  transform: translateX(-200%);
+}
+
+.slide_right {
+  overflow: hidden;
+  transform: translateX(200%);
+}
+
+.slide_right img,
+.slide_left img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.25s;
+}
+
+.slide_right img:hover,
+.slide_left img:hover {
+  scale: 1.1;
 }

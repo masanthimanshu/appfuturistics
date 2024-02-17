@@ -1,0 +1,18 @@
+/* Hero Section Style */
+
+.hero_sec {
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_sec h1 {
+  font-size: 8rem;
+  font-family: "Parisienne";
+}
+
+.hero_sec h2 {
+  font-size: 2rem;
+}

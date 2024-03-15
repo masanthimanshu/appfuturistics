@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import style from "./style.module.css";
 import { ArrowOutward } from "@mui/icons-material";
 import { Box, Grid, Button, Typography } from "@mui/material";
@@ -25,4 +26,11 @@ export const CaseStudiesCard = ({ image, type, tech, title }) => {
       </Button>
     </Grid>
   );
+};
+
+CaseStudiesCard.propTypes = {
+  image: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  tech: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };

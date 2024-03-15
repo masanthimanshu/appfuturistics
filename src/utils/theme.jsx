@@ -5,17 +5,13 @@ export const Theme = createTheme({
     fontFamily: "Open Sans",
   },
   palette: {
-    primary: {
-      main: "#000000",
-    },
+    primary: { main: "#000000" },
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          "&:hover": {
-            backgroundColor: "inherit",
-          },
+          "&:hover": { backgroundColor: "inherit" },
         },
       },
     },

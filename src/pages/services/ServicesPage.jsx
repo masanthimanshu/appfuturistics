@@ -27,19 +27,19 @@ export default function ServicesPage() {
         <Grid container spacing={5}>
           <OurServicesCard
             heading="Design"
-            icon={<i class="fa-solid fa-crop"></i>}
+            icon={<i className="fa-solid fa-crop"></i>}
             description="Lorem ipsum dolor, sit amet consectetur 
                 adipisicing elit. Quis dignissimos enim unde!"
           />
           <OurServicesCard
             heading="Development"
-            icon={<i class="fa-solid fa-code"></i>}
+            icon={<i className="fa-solid fa-code"></i>}
             description="Lorem ipsum dolor, sit amet consectetur 
                 adipisicing elit. Quis dignissimos enim unde!"
           />
           <OurServicesCard
             heading="Marketing"
-            icon={<i class="fa-solid fa-chart-simple"></i>}
+            icon={<i className="fa-solid fa-chart-simple"></i>}
             description="Lorem ipsum dolor, sit amet consectetur 
                 adipisicing elit. Quis dignissimos enim unde!"
           />

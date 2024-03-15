@@ -1,5 +1,6 @@
+import PropTypes from "prop-types";
 import style from "./style.module.css";
-import { Box, Typography, Grid } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 
 export const OurServicesCard = ({ icon, heading, description }) => {
   return (
@@ -16,4 +17,10 @@ export const OurServicesCard = ({ icon, heading, description }) => {
       </div>
     </Grid>
   );
+};
+
+OurServicesCard.propTypes = {
+  icon: PropTypes.string.isRequired,
+  heading: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };

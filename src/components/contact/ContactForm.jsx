@@ -18,7 +18,9 @@ export const ContactForm = () => {
       <Typography color="grey">
         <b>GET IN TOUCH</b>
       </Typography>
-      <Typography variant="h4">Let’s get started on your project!</Typography>
+      <Typography variant="h4">
+        Let&apos;s get started on your project!
+      </Typography>
       <br />
       <br />
       <br />

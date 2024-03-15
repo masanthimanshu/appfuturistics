@@ -1,4 +1,5 @@
 import { gsap } from "gsap";
+import PropTypes from "prop-types";
 import style from "./style.module.css";
 import { useLayoutEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -36,3 +37,5 @@ export const ZoomSection = ({ image }) => {
     ></div>
   );
 };
+
+ZoomSection.propTypes = { image: PropTypes.string.isRequired };

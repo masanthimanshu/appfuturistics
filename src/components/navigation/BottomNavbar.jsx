@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Box, Container } from "@mui/material";
 
@@ -84,3 +85,5 @@ export const BottomNavbar = ({ page }) => {
     </Container>
   );
 };
+
+BottomNavbar.propTypes = { page: PropTypes.string.isRequired };

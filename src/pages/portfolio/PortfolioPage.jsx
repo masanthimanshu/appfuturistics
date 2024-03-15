@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import style from "./style.module.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Box, Container, Divider, Grid, Typography } from "@mui/material";
+import { Box, Container, Divider, Grid } from "@mui/material";
 import { useLayoutEffect, useRef, useEffect } from "react";
 import { ContactForm } from "../../components/contact/ContactForm";
 import { BottomNavbar } from "../../components/navigation/BottomNavbar";

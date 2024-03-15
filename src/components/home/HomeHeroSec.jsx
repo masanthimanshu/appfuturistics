@@ -36,7 +36,7 @@ export const HomeHeroSection = () => {
     }, animation);
 
     return () => ctx.revert();
-  }, []);
+  }, [timeLine]);
 
   return (
     <div ref={animation}>

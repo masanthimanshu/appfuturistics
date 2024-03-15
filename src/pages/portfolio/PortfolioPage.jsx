@@ -77,18 +77,20 @@ export default function PortfolioPage() {
         <br />
         <br />
         <br />
+        <br />
         <Grid container spacing={6}>
-          <Grid item md={6}>
-            <div id="slide_left" className={style.slide_left}>
-              <img src="/desk.png" alt="Image" />
-            </div>
-          </Grid>
           <Grid item md={6} display="flex" alignItems="center">
-            <div id="slide_right" className={style.slide_right}>
+            <div id="slide_left" className={style.slide_left}>
               <ProjectDetailsCard />
             </div>
           </Grid>
+          <Grid item md={6}>
+            <div id="slide_right" className={style.slide_right}>
+              <img src="/desk.png" alt="Image" />
+            </div>
+          </Grid>
         </Grid>
+        <br />
         <br />
         <br />
         <br />

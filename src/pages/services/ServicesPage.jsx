@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import style from "./style.module.css";
-import { Box, Container, Divider, Grid, Typography } from "@mui/material";
 import { ContactForm } from "../../components/contact/ContactForm";
 import { ZoomSection } from "../../components/services/ZoomSection";
 import { BottomNavbar } from "../../components/navigation/BottomNavbar";
 import { OurServicesCard } from "../../components/home/OurServicesCard";
+import { Box, Container, Divider, Grid, Typography } from "@mui/material";
 
 export default function ServicesPage() {
   useEffect(() => {

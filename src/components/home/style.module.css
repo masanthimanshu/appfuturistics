@@ -42,6 +42,7 @@
   padding: 2rem;
   cursor: pointer;
   transition: 0.25s;
+  border-radius: 5px;
   background-color: white;
 }
 

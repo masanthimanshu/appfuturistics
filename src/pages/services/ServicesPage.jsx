@@ -56,10 +56,17 @@ export default function ServicesPage() {
               </Typography>
               <br />
               <Typography>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit,
-                est dignissimos dolorem molestias iste porro nostrum! Eveniet
-                tempore ipsam pariatur ipsa, aliquid quod, nemo sequi, debitis
-                reprehenderit neque repellendus et!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                delectus velit similique sapiente quo magni laudantium quas
+                debitis laboriosam maxime voluptate dolorum cumque eum impedit,
+                distinctio aliquid fugiat amet voluptatibus.
+              </Typography>
+              <br />
+              <Typography>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Placeat sequi maiores voluptatem aspernatur ipsam fugiat error
+                totam eveniet dolorum, perferendis recusandae saepe beatae optio
+                officiis maxime autem cum enim consequatur!
               </Typography>
             </Grid>
             <Grid item md={6}></Grid>
@@ -75,10 +82,17 @@ export default function ServicesPage() {
               </Typography>
               <br />
               <Typography>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit,
-                est dignissimos dolorem molestias iste porro nostrum! Eveniet
-                tempore ipsam pariatur ipsa, aliquid quod, nemo sequi, debitis
-                reprehenderit neque repellendus et!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum neque minima eligendi consectetur et quasi
+                repudiandae excepturi labore. Cum similique in nam? Animi
+                consequatur fuga rerum facilis quasi fugiat commodi!
+              </Typography>
+              <br />
+              <Typography>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur autem ullam at neque in amet inventore nam asperiores
+                nulla excepturi qui tempora molestias, quae sunt, nesciunt quo
+                eaque ea possimus?
               </Typography>
             </Grid>
             <Grid item md={6} order={1}></Grid>
@@ -90,14 +104,21 @@ export default function ServicesPage() {
           <Grid container spacing={5}>
             <Grid item md={6}>
               <Typography variant="h4">
-                <b>Mobile App</b>
+                <b>Wordpress Website</b>
               </Typography>
               <br />
               <Typography>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit,
-                est dignissimos dolorem molestias iste porro nostrum! Eveniet
-                tempore ipsam pariatur ipsa, aliquid quod, nemo sequi, debitis
-                reprehenderit neque repellendus et!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                aperiam voluptatum vero temporibus corporis nulla sequi,
+                similique esse voluptatem cum illum est harum natus, sunt itaque
+                soluta molestias dolorum ab!
+              </Typography>
+              <br />
+              <Typography>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                fuga dicta voluptatem laborum corrupti officia voluptas quo, qui
+                architecto inventore dolore. Voluptates aspernatur possimus
+                dolor nulla porro in officiis laudantium.
               </Typography>
             </Grid>
             <Grid item md={6}></Grid>

@@ -5,14 +5,15 @@ import { Box, Container } from "@mui/material";
 export const BottomNavbar = ({ page }) => {
   return (
     <Container
+      maxWidth="md"
       sx={{
-        p: 1.5,
+        p: 1.25,
         zIndex: 2,
         boxShadow: 5,
         borderRadius: 25,
         bgcolor: "white",
         position: "sticky",
-        top: "calc(100vh - 80px)",
+        top: "calc(100vh - 75px)",
       }}
     >
       <Box display="flex" justifyContent="space-around">
@@ -74,12 +75,22 @@ export const BottomNavbar = ({ page }) => {
             </Box>
           )}
         </Link>
-        <Link to="/hire-us">
-          <i className="fa-solid fa-square-arrow-up-right"></i> &nbsp;&nbsp;
-          Hire us
-        </Link>
-        <Link to="/career">
-          <i className="fa-solid fa-paper-plane"></i> &nbsp;&nbsp; Career
+        <Link to="/contact">
+          {page == "contact" ? (
+            <Box py={1} px={4} color="white" bgcolor="black" borderRadius={25}>
+              <p>
+                <i className="fa-solid fa-square-arrow-up-right"></i>
+                &nbsp;&nbsp; Contact us
+              </p>
+            </Box>
+          ) : (
+            <Box py={1} px={4}>
+              <p>
+                <i className="fa-solid fa-square-arrow-up-right"></i>
+                &nbsp;&nbsp; Contact
+              </p>
+            </Box>
+          )}
         </Link>
       </Box>
     </Container>

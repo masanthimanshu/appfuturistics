@@ -6,7 +6,9 @@ export const OurServicesCard = ({ icon, heading, description }) => {
   return (
     <Grid item md={4}>
       <div className={style.services_card}>
-        <Typography variant="h3">{icon}</Typography>
+        <Typography variant="h3">
+          <i className={icon}></i>
+        </Typography>
         <br />
         <br />
         <Typography variant="h4">
